@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-28T19:41:57 IST" name="Default suite" finished-at="2022-10-28T19:45:21 IST" duration-ms="203621">
+  <suite started-at="2022-10-29T09:30:01 IST" name="Suite" finished-at="2022-10-29T09:32:50 IST" duration-ms="168979">
     <groups>
     </groups>
-    <test started-at="2022-10-28T19:41:57 IST" name="Default test" finished-at="2022-10-28T19:45:21 IST" duration-ms="203621">
-      <class name="scripts.Testclass3">
-        <test-method is-config="true" signature="OpenApp()[pri:0, instance:scripts.Testclass3@29d89d5d]" started-at="2022-10-28T19:41:58 IST" name="OpenApp" finished-at="2022-10-28T19:42:10 IST" duration-ms="12376" status="PASS">
+    <test started-at="2022-10-29T09:30:01 IST" name="Test" finished-at="2022-10-29T09:32:50 IST" duration-ms="168979">
+      <class name="scripts.Testcase1">
+        <test-method is-config="true" signature="OpenApp()[pri:0, instance:scripts.Testcase1@212b5695]" started-at="2022-10-29T09:30:01 IST" name="OpenApp" finished-at="2022-10-29T09:30:16 IST" duration-ms="14952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApp -->
-        <test-method signature="tc3()[pri:0, instance:scripts.Testclass3@29d89d5d]" started-at="2022-10-28T19:42:10 IST" name="tc3" finished-at="2022-10-28T19:45:21 IST" duration-ms="191156" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="tc1()[pri:0, instance:scripts.Testcase1@212b5695]" started-at="2022-10-29T09:30:16 IST" name="tc1" finished-at="2022-10-29T09:30:33 IST" duration-ms="17437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.Testcase1@212b5695]" started-at="2022-10-29T09:30:33 IST" name="closeApp" finished-at="2022-10-29T09:30:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.Testcase1 -->
+      <class name="scripts.Testclass3">
+        <test-method is-config="true" signature="OpenApp()[pri:0, instance:scripts.Testclass3@2b91004a]" started-at="2022-10-29T09:30:33 IST" name="OpenApp" finished-at="2022-10-29T09:30:42 IST" duration-ms="8695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenApp -->
+        <test-method signature="tc3()[pri:0, instance:scripts.Testclass3@2b91004a]" started-at="2022-10-29T09:30:42 IST" name="tc3" finished-at="2022-10-29T09:32:50 IST" duration-ms="127784" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Core Java For Selenium Trainin']"}
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-3E2GHNK', ip: '192.168.101.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\aw\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fae70ffc0994eb23f2a51bd8ff9fa4c2
-*** Element info: {Using=xpath, value=//a[text()=' Core Java For Selenium Trainin']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\aw\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:65432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e672884958f8e2d7ebe228ed237bf275]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Core Java For Selenium Trainin']"}
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-3E2GHNK', ip: '192.168.101.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\aw\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fae70ffc0994eb23f2a51bd8ff9fa4c2
-*** Element info: {Using=xpath, value=//a[text()=' Core Java For Selenium Trainin']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\aw\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:65432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e672884958f8e2d7ebe228ed237bf275
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,15 +57,16 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at PomPages.CoreJavaPage1.corejavacourse(CoreJavaPage1.java:18)
-at scripts.Testclass3.tc3(Testclass3.java:20)
+at PomPages.WishlistPage.playbt(WishlistPage.java:24)
+at scripts.Testclass3.tc3(Testclass3.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,15 +97,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc3 -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.Testclass3@29d89d5d]" started-at="2022-10-28T19:45:21 IST" name="closeApp" finished-at="2022-10-28T19:45:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.Testclass3@2b91004a]" started-at="2022-10-29T09:32:50 IST" name="closeApp" finished-at="2022-10-29T09:32:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- scripts.Testclass3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
